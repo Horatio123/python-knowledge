@@ -1,0 +1,1712 @@
+[
+  {
+    "group": "Numerical Defects",
+    "name": "Bitwise operation on negative value",
+    "impact": "Medium"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Integer constant overflow",
+    "impact": "Medium"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Integer conversion overflow",
+    "impact": "High"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Integer division by zero",
+    "impact": "High"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Integer overflow",
+    "impact": "Medium"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Integer precision exceeded",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Invalid use of standard library integer routine",
+    "impact": "High"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Possible invalid operation on boolean operand",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Precision loss from integer to float conversion",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Shift of a negative value",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Shift operation overflow",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Sign change integer conversion overflow",
+    "impact": "Medium"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Unsigned integer conversion overflow",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Unsigned integer overflow",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Unsigned integer constant overflow",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Use of plain char type for numerical value",
+    "impact": "Medium"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Absorption of float operand",
+    "impact": "High"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Float conversion overflow",
+    "impact": "High"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Float division by zero",
+    "impact": "High"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Float overflow",
+    "impact": "Low"
+  },
+  {
+    "group": "Numerical Defects",
+    "name": "Invalid use of standard library floating point routine",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Arithmetic operation with NULL pointer",
+    "impact": "Low"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Array access out of bounds",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Buffer overflow from incorrect string format specifier",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Destination buffer overflow in string manipulation",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Destination buffer underflow in string manipulation",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Invalid use of standard library memory routine",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Invalid use of standard library string routine",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Move operation on const object",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Null pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Pointer access out of bounds",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Pointer or reference to stack variable leaving scope",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Subtraction or comparison between pointers to different arrays",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Unreliable cast of function pointer",
+    "impact": "Medium"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Unreliable cast of pointer",
+    "impact": "Medium"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Use of automatic variable as putenv-family function argument",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Use of path manipulation function without maximum sized buffer checking",
+    "impact": "High"
+  },
+  {
+    "group": "Static Memory Defects",
+    "name": "Wrong allocated object size for cast",
+    "impact": "High"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Alignment changed after memory reallocation",
+    "impact": "Low"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Deallocation of previously deallocated pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Invalid free of pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Invalid deletion of pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Memory leak",
+    "impact": "Medium"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Mismatched alloc/dealloc functions on Windows",
+    "impact": "Low"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Unprotected dynamic memory allocation",
+    "impact": "Low"
+  },
+  {
+    "group": "Dynamic Memory Defects",
+    "name": "Use of previously freed pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Assertion",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Character value absorbed into EOF",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Declaration mismatch",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Errno not reset",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Incorrect value forwarding",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid iterator usage",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid use of == (equality) operator",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid use of standard library routine",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid va_list argument",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of errno",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of narrow or wide character string",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of return value from nonreentrant standard function",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Noncompliance with AUTOSAR specification",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Possible misuse of sizeof",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Possibly unintended evaluation of expression because of operator precedence rules",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "std::string_view initialized with dangling pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Typedef mismatch",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Variable length array with nonpositive size",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Writing to const qualified object",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Wrong type used in sizeof",
+    "impact": "High"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Abnormal termination of exit handler",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Bad file access mode or status",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Call through non-prototyped function pointer",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Copy of overlapping memory",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Environment pointer invalidated by previous operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Floating point comparison with equality operators",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Function called from signal handler not asynchronous-safe",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Function called from signal handler not asynchronous-safe (strict ISO C)",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Improper array initialization",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Improper erase-remove idiom",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Incorrect data type passed to va_arg",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Incorrect pointer scaling",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Incorrect type data passed to va_start",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Incorrect use of offsetof in C++",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Incorrect use of va_start",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Inline constraint not respected",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid assumptions about memory organization",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid file position",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Invalid use of = (assignment) operator",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Memory comparison of padding data",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Memory comparison of strings",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Missing byte reordering when transferring data",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of errno in a signal handler",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Shared data access within signal handler",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Side effect in arguments to unsafe macro",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Signal call from within signal handler",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Standard function call with incorrect arguments",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Too many va_arg calls for current argument list",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Too many va_arg calls for current argument list",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Unnamed namespace in header file",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Unsafe conversion between pointer and integer",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Use of memset with size argument zero",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Use of indeterminate string",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Accessing object with temporary lifetime",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Alternating input and output from a stream without flush or positioning call",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Call to memset with unintended value",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Format string specifiers and arguments mismatch",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Memory comparison of float-point values",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Missing null in string array",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of a FILE object",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of sign-extended character value",
+    "impact": "Medium"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Misuse of structure with flexible array member",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Modification of internal buffer returned from nonreentrant standard function",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Overlapping assignment",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Predefined macro used as object",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Preprocessor directive in macro argument",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Qualifier removed in conversion",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Result of string::c_str() compared to another pointer",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Return from computational exception signal handler",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Side effect of expression ignored",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Stream argument with possibly unintended side effects",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Universal character name from token concatenation",
+    "impact": "Low"
+  },
+  {
+    "group": "Programming Defects",
+    "name": "Unsafe conversion from string to numerical value",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Code deactivated by constant false condition",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Dead code",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Missing return statement",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Non-initialized variable",
+    "impact": "High"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Non-initialized pointer",
+    "impact": "High"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Partially accessed array",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Pointer to non-initialized value converted to const pointer",
+    "impact": "Medium"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Static uncalled function",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Unreachable code",
+    "impact": "Medium"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Useless if",
+    "impact": "Medium"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Useless preprocessor conditional directive",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Variable shadowing",
+    "impact": "Low"
+  },
+  {
+    "group": "Data Flow Defects",
+    "name": "Write without a further read",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "File access between time of check and use (TOCTOU)",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "File descriptor exposure to child process",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "File manipulation after chroot without chdir",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Inappropriate I/O operation on device files",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Unsafe call to a system function",
+    "impact": "High"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Use of non-secure temporary file",
+    "impact": "High"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Vulnerable path manipulation",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Bad order of dropping privileges",
+    "impact": "High"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Privilege drop not verified",
+    "impact": "High"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Umask used with chmod-style arguments",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Vulnerable permission assignments",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Unsafe standard encryption function",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Unsafe standard function",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Use of dangerous standard function",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Use of obsolete standard function",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Deterministic random output from constant seed",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Predictable random output from predictable seed",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Vulnerable pseudo-random number generator",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Critical data member is not private",
+    "impact": "High"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Errno not checked",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Execution of a binary from a relative path can be controlled by an external actor",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Function pointer assigned with absolute address",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Hard-coded sensitive data",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Incorrect order of network connection operations",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Information leak via structure padding",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Load of library from a relative path can be controlled by an external actor",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Mismatch between data length and size",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Missing case for switch condition",
+    "impact": "Low"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Misuse of readlink()",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Returned value of a sensitive function not checked",
+    "impact": "High"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Sensitive data printed out",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Sensitive heap memory not cleared before release",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Uncertain memory cleaning",
+    "impact": "Medium"
+  },
+  {
+    "group": "Security Defects",
+    "name": "Uncleared sensitive data in stack",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Constant block cipher initialization vector",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Constant cipher key",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Inconsistent cipher operations",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing block cipher initialization vector",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing cipher algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing cipher data to process",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing cipher final step",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing cipher key",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Predictable block cipher initialization vector",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Predictable cipher key",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Weak cipher algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Weak cipher mode",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Context initialized incorrectly for cryptographic operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Incorrect key for cryptographic algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing data for encryption, decryption or signing operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing parameters for key generation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing peer key",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing private key",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing public key",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Nonsecure parameters for key generation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Incompatible padding for RSA algorithm operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing blinding for RSA algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing padding for RSA algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Nonsecure RSA public exponent",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Weak padding for RSA algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Context initialized incorrectly for digest operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing final step after hashing update operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing hash algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing salt for hashing operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "No data added into context",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Nonsecure hash algorithm",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing certification authority list",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing private key for X.509 certificate",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Missing X.509 certificate",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Nonsecure SSL/TLS protocol",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "Server certificate common name not checked",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "TLS/SSL connection method not set",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "TLS/SSL connection method set incorrectly",
+    "impact": "Medium"
+  },
+  {
+    "group": "Cryptography Defects",
+    "name": "X.509 peer certificate not checked",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Array access with tainted index",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Command executed from externally controlled path",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Execution of externally controlled command",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Host change using externally controlled elements",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Library loaded from externally controlled path",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Loop bounded with tainted value",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Memory allocation with tainted size",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Pointer dereference with tainted offset",
+    "impact": "Low"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Tainted division operand",
+    "impact": "Low"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Tainted modulo operand",
+    "impact": "Low"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Tainted NULL or non-null-terminated string",
+    "impact": "Low"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Tainted sign change conversion",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Tainted size of variable length array",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Tainted string format",
+    "impact": "Low"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Use of externally controlled environment variable",
+    "impact": "Medium"
+  },
+  {
+    "group": "Tainted Data Defects",
+    "name": "Use of tainted pointer",
+    "impact": "Low"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Data race",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Data race on adjacent bit fields",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Data race through standard library function call",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Blocking operation while holding lock",
+    "impact": "Low"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Deadlock",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Destruction of locked mutex",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Double lock",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Double unlock",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Missing lock",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Missing unlock",
+    "impact": "High"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Multiple mutexes used with same condition variable",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Asynchronously cancellable thread",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Join or detach of a joined or detached thread",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Missing or double initialization of thread attribute",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Multiple threads waiting on same condition variable",
+    "impact": "Low"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Signal call in multithreaded program",
+    "impact": "Low"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Use of signal killing thread",
+    "impact": "Low"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Use of undefined thread ID",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Automatic or thread local variable escaping from a thread",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Thread-specific memory leak",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Atomic load and store sequence not atomic",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Atomic variable accessed twice in an expression",
+    "impact": "Medium"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Function that can spuriously fail not wrapped in loop",
+    "impact": "Low"
+  },
+  {
+    "group": "Concurrency Defects",
+    "name": "Function that can spuriously wake up not wrapped in loop",
+    "impact": "Low"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "*this not returned in copy assignment operator",
+    "impact": "Low"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Base class assignment operator not called",
+    "impact": "High"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Base class destructor not virtual",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Bytewise operations on nontrivial class object",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Conversion or deletion of incomplete class pointer",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Copy constructor or assignment operator modifying source operand",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Copy constructor not called in initialization list",
+    "impact": "High"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Incompatible types prevent overriding",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Lambda used as typeid operand",
+    "impact": "Low"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Member not initialized in constructor",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Missing explicit keyword",
+    "impact": "Low"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Missing virtual inheritance",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Object slicing",
+    "impact": "High"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Operator new not overloaded for possibly overaligned class",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Partial override of overloaded virtual functions",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Return of non const handle to encapsulated data member",
+    "impact": "Medium"
+  },
+  {
+    "group": "Object Oriented Defects",
+    "name": "Self assignment not tested in operator",
+    "impact": "Medium"
+  },
+  {
+    "group": "Resource Management Defects",
+    "name": "Closing a previously closed resource",
+    "impact": "High"
+  },
+  {
+    "group": "Resource Management Defects",
+    "name": "Opening previously opened resource",
+    "impact": "Medium"
+  },
+  {
+    "group": "Resource Management Defects",
+    "name": "Resource leak",
+    "impact": "High"
+  },
+  {
+    "group": "Resource Management Defects",
+    "name": "Use of previously closed resource",
+    "impact": "High"
+  },
+  {
+    "group": "Resource Management Defects",
+    "name": "Writing to read-only resource",
+    "impact": "High"
+  },
+  {
+    "group": "C++ Exception Defects",
+    "name": "Exception caught by value",
+    "impact": "Medium"
+  },
+  {
+    "group": "C++ Exception Defects",
+    "name": "Exception handler hidden by previous handler",
+    "impact": "Medium"
+  },
+  {
+    "group": "C++ Exception Defects",
+    "name": "Noexcept function exits with exception",
+    "impact": "High"
+  },
+  {
+    "group": "C++ Exception Defects",
+    "name": "Throw argument raises unexpected exception",
+    "impact": "High"
+  },
+  {
+    "group": "C++ Exception Defects",
+    "name": "Uncaught exception",
+    "impact": "High"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "A move operation may throw",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Const parameter values may cause unnecessary data copies",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Const return values may cause unnecessary data copies",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Const rvalue reference parameter may cause unnecessary data copies",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Const std::move input may cause a more expensive object copy",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Empty destructors may cause unnecessary data copies",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive return of a const object",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Move operation uses copy",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "std::move called on an unmovable type",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive copy in a range-based for loop iteration",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive local variable copy",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive pass by value",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive return by value",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive constant std::string construction",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Missing constexpr specifier",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive dynamic cast",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of a standard algorithm when a more efficient method exists",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of container's count method",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of container's insertion methods",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of container's size method",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of map's bracket operator to insert or assign a value",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of non-member std::string operator+() instead of a simple append",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of std::string methods instead of more efficient overload",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of std::string with empty string literal",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of string functions from the C standard library",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive use of substr() to shorten a std::string",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive std::string::c_str() use in a std::string operation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Inefficient use of sprintf",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Inefficient string length computation",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "std::endl may cause an unnecessary flush",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Use of new or make_unique instead of more efficient make_shared",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive logical operation",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive return caused by unnecessary std::move",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive allocation in loop",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Expensive post-increment operation",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Inefficient use of for loop",
+    "impact": "Low"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Missing call to container's reserve method",
+    "impact": "Medium"
+  },
+  {
+    "group": "Performance Defects",
+    "name": "Unnecessary Padding",
+    "impact": "Medium"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Ambiguous declaration syntax",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Incorrectly indented statement",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Invalid scientific notation format",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Line with more than one statement",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Hard-coded buffer size",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Hard-coded loop boundary",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Hard-coded object size used to manipulate memory",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Method not const",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Public static field not const",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Unmodified variable not const-qualified",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Macro terminated with a semicolon",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Macro with multiple statements",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Missing break of switch case",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Possibly inappropriate data type for switch expression",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Semicolon on same line as if, for or while statement",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Delete of void pointer",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Missing overload of allocation or deallocation function",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Missing reset of a freed pointer",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "C++ reference to const-qualified type with subsequent modification",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "C++ reference type qualified with const or volatile",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Declaration of catch for generic exception",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Declaration of throw for generic exception",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Incorrect syntax of flexible array member size",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Use of a forbidden function",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Use of a forbidden keyword",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Use of a forbidden macro",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Use of setjmp/longjmp",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Bitwise and arithmetic operation on the same data",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "File does not compile",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Unused parameter",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Useless expressions in sizeof operand",
+    "impact": "Low"
+  },
+  {
+    "group": "Good Practice Defects",
+    "name": "Useless include",
+    "impact": "Low"
+  }
+]
