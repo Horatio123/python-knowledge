@@ -10,6 +10,7 @@ https://www.geeksforgeeks.org/multithreading-python-set-1/
 https://www.geeksforgeeks.org/multithreading-in-python-set-2-synchronization/
 """
 
+
 def play_queue():
     q = queue.Queue()
 
@@ -150,12 +151,56 @@ def play_thread_syn():
     t2.join()
 
 
+"""
+https://stackoverflow.com/questions/24855335/understanding-thread-jointimeout
+
+You're misunderstanding what timeout does. It just tells join how long to wait for the thread to stop. If the thread is still running after the timeout expires, the join call ends, but the thread keeps running.
+
+"""
+
+
+def join_test(name, num):
+    while True:
+        num += 0.5
+        print('thread ' + str(name) + ' at time ' + str(num))
+        time.sleep(0.5)
+
+
+def play_join_param():
+    for i in range(4):
+        t = threading.Thread(target=join_test, args=(i, 0))
+        t.setDaemon(True)
+        t.start()
+        t.join(timeout=2)
+        print(f"thread {i} is {t.is_alive()}")
+
+    print('end')
+
+
+def play_join_param2():
+    t = threading.Thread(target=join_test, args=(1, 0))
+    """
+    daemon flag tells Python that the thread shouldn't keep the program alive if the main thread is complete. If daemon is False, the program will stay alive until the thread is complete, even if the main thread is finished.
+    """
+    t.setDaemon(True)
+    t.start()
+    t.join(timeout=2)
+
+    print(t.is_alive())
+    time.sleep(3)
+    print(t.is_alive())
+
+
 if __name__ == '__main__':
     # play_queue()
     # play_thread()
     # play_pool()
-    global x
-    for i in range(10):
-        # play_thread_no_syn()
-        play_thread_syn()
-        print("Iteration {0}: x = {1}".format(i, x))
+
+    # global x
+    # for i in range(10):
+    #     # play_thread_no_syn()
+    #     play_thread_syn()
+    #     print("Iteration {0}: x = {1}".format(i, x))
+
+    play_join_param()
+    # play_join_param2()

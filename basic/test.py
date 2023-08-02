@@ -12,6 +12,7 @@
 
 python3.8和python3.10的os.path.dirname函数功能不一样，3.8只能识别绝对路径
 """
+import asyncio
 
 """
 https://www.geeksforgeeks.org/python-passing-dictionary-as-arguments-to-function/
@@ -92,6 +93,38 @@ def play_decorate_b(*args):
 play_decrate_func = decorate_func(play_decorate_b)
 
 
+"""
+https://www.youtube.com/watch?v=0GVLtTnebNA
+https://zetcode.com/python/async-await/
+https://realpython.com/async-io-python/
+"""
+
+
+async def kill_time(num):
+    print(f"get {num}")
+    await asyncio.sleep(1)
+
+
+async def play_async():
+    tasks = []
+    for i in range(1, 101):
+        tasks.append(kill_time(i))
+
+    await asyncio.sleep(1)
+    await asyncio.gather(*tasks)
+
+
+async def mul(x, y):
+    return x * y
+
+
+def play_async_loop():
+    loop = asyncio.get_event_loop()
+
+    res = loop.run_until_complete(mul(5, 5))
+    print(res)
+
+
 if __name__ == '__main__':
     # ll = [1, 2, 3]
     # func_paly_dict(name='ccc', num=9)
@@ -106,5 +139,8 @@ if __name__ == '__main__':
     # p.value = 'bb'
     # print('get private param use property' + p.value)
 
-    play_decorate('play_decorate')
-    play_decrate_func('play_decrate_func')
+    # play_decorate('play_decorate')
+    # play_decrate_func('play_decrate_func')
+
+    # asyncio.run(play_async())
+    play_async_loop()
