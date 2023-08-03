@@ -94,6 +94,32 @@ play_decrate_func = decorate_func(play_decorate_b)
 
 
 """
+TypeError: 'NoneType' object is not callable
+https://stackoverflow.com/questions/9768865/python-nonetype-object-is-not-callable-beginner
+https://www.geeksforgeeks.org/decorators-with-parameters-in-python/
+"""
+
+
+def decorator(*args, **kwargs):
+    print("Inside decorator")
+
+    def inner_func(func):
+        # code functionality here
+        print("Inside inner function")
+        print(args[0], args[1], "I like", kwargs['like'])
+
+        func()
+
+    # returning inner function
+    return inner_func
+
+
+@decorator('aa', 'bb', like="geeksforgeeks")
+def play_decorate_c():
+    print("Inside actual function")
+
+
+"""
 https://www.youtube.com/watch?v=0GVLtTnebNA
 https://zetcode.com/python/async-await/
 https://realpython.com/async-io-python/
@@ -125,6 +151,44 @@ def play_async_loop():
     print(res)
 
 
+def play_break():
+    for i in range(10):
+
+        for j in range(5):
+            if j == 3:
+                break
+            print(f'i = {i}, j = {j}')
+
+        if i == 2:
+            break
+
+
+def play_continue():
+    for i in range(10):
+        if i == 8:
+            continue
+
+
+def play_fileno():
+    with open('python_cmd.py') as f:
+        print(f)
+        print(f.fileno())
+
+    with open('shell_python.sh') as f2:
+        print(f2)
+        print(f2.fileno())
+
+
+def play_fileno2():
+    with open('python_cmd.py') as f:
+        print(f)
+        print(f.fileno())
+
+    with open('shell_python.sh') as f2:
+        print(f2)
+        print(f2.fileno())
+
+
 if __name__ == '__main__':
     # ll = [1, 2, 3]
     # func_paly_dict(name='ccc', num=9)
@@ -141,6 +205,13 @@ if __name__ == '__main__':
 
     # play_decorate('play_decorate')
     # play_decrate_func('play_decrate_func')
+    # play_decorate_c
 
     # asyncio.run(play_async())
-    play_async_loop()
+    # play_async_loop()
+
+    # play_break()
+    # play_continue()
+
+    play_fileno()
+    play_fileno2()
