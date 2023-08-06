@@ -13,6 +13,7 @@
 python3.8和python3.10的os.path.dirname函数功能不一样，3.8只能识别绝对路径
 """
 import asyncio
+import os
 
 """
 https://www.geeksforgeeks.org/python-passing-dictionary-as-arguments-to-function/
@@ -78,6 +79,7 @@ def decorate_func(func):
         print('start decorate_func')
         func(*args)
         print(f'{args[0]} use decorate_func')
+
     return inner_func
 
 
@@ -91,7 +93,6 @@ def play_decorate_b(*args):
 
 
 play_decrate_func = decorate_func(play_decorate_b)
-
 
 """
 TypeError: 'NoneType' object is not callable
@@ -179,17 +180,60 @@ def play_fileno():
         print(f2.fileno())
 
 
-def play_fileno2():
-    with open('python_cmd.py') as f:
-        print(f)
-        print(f.fileno())
+"""
+https://www.tutorialspoint.com/python/os_open.htm
+"""
 
-    with open('shell_python.sh') as f2:
-        print(f2)
-        print(f2.fileno())
+
+def play_fileno2():
+    fw = os.open('rw.text', os.O_RDWR | os.O_CREAT)
+    print(type(fw))
+    print(fw)
+    os.write(fw, b"this is test")
+    os.close(fw)
+
+    fr = os.open('rw.text', os.O_RDONLY)
+    read_info = os.fdopen(fr)
+    print(fr)
+    print("read info is: ", read_info.read())
+    os.close(fr)
+
+
+"""
+https://www.geeksforgeeks.org/python-os-pipe-method/
+"""
+
+
+def play_pipe():
+    r, w = os.pipe()
+    text = b'hello pipe'
+    print("w is: ", w)
+    print("text is: ", text)
+    print("text decode is: ", text.decode())
+    os.write(w, text)
+    os.close(w)
+
+    read_info = os.fdopen(r)
+    print("r is: ", r)
+    print("Read text: ", read_info)
+    print("Read text read: ", read_info.read())
+
+
+def play_iter():
+    ll = [1, 2, 3]
+    for i in ll:
+        print(i)
+
+    it = iter(ll)
+
+    print("get fist element in it: ", next(it))
+    for e in it:
+        print(e)
 
 
 if __name__ == '__main__':
+    print('\n')
+    print('\n')
     # ll = [1, 2, 3]
     # func_paly_dict(name='ccc', num=9)
     # func_paly_list("qqq", '222')
@@ -213,5 +257,9 @@ if __name__ == '__main__':
     # play_break()
     # play_continue()
 
-    play_fileno()
+    # play_fileno()
     play_fileno2()
+
+    # play_pipe()
+
+    # play_iter()
