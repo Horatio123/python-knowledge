@@ -231,6 +231,15 @@ def play_iter():
         print(e)
 
 
+def play_str():
+    ss = "this is %s, that is %s" % ("duck", "pig")
+    print(ss)
+
+    ll = ['dog', 'cat']
+    sss = "this is %s, that is %s" % tuple(ll)
+    print(sss)
+
+
 if __name__ == '__main__':
     print('\n')
     print('\n')
@@ -258,8 +267,10 @@ if __name__ == '__main__':
     # play_continue()
 
     # play_fileno()
-    play_fileno2()
+    # play_fileno2()
 
     # play_pipe()
 
     # play_iter()
+
+    play_str()
