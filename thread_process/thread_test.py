@@ -1,4 +1,5 @@
 import concurrent.futures
+import functools
 import queue
 import threading
 import time
@@ -8,6 +9,7 @@ https://www.cnblogs.com/lincappu/p/12890761.html
 https://www.geeksforgeeks.org/queue-in-python/
 https://www.geeksforgeeks.org/multithreading-python-set-1/
 https://www.geeksforgeeks.org/multithreading-in-python-set-2-synchronization/
+https://pymotw.com/3/queue/index.html
 """
 
 
@@ -48,8 +50,10 @@ def play_thread():
     t1.start()
     t2.start()
 
+    print("is t1 alive before join: ", t1.is_alive())
     q.join()
     print('q is finished')
+    print("is t1 alive after join: ", t1.is_alive())
 
     t1.join()
     print('t1 is finished')
@@ -191,6 +195,50 @@ def play_join_param2():
     print(t.is_alive())
 
 
+@functools.total_ordering
+class Job:
+    def __init__(self, p):
+        self.p = p
+        print("new job priority: ", p)
+        return
+
+    def __eq__(self, other):
+        try:
+            return self.p == other.p
+        except AttributeError:
+            return NotImplemented
+
+    def __lt__(self, other):
+        try:
+            return self.p >= other.p
+        except AttributeError:
+            return NotImplemented
+
+
+def play_priority_lifo_queue():
+    job1 = Job(1)
+    job2 = Job(5)
+    job3 = Job(3)
+
+    q = queue.PriorityQueue()
+    q.put(job1)
+    q.put(job2)
+    q.put(job3)
+
+    print(q.get().p)
+    print(q.get().p)
+    print(q.get().p)
+
+    q2 = queue.LifoQueue()
+    q2.put(job1)
+    q2.put(job2)
+    q2.put(job3)
+
+    print(q2.get().p)
+    print(q2.get().p)
+    print(q2.get().p)
+
+
 if __name__ == '__main__':
     # play_queue()
     # play_thread()
@@ -202,5 +250,7 @@ if __name__ == '__main__':
     #     play_thread_syn()
     #     print("Iteration {0}: x = {1}".format(i, x))
 
-    play_join_param()
+    # play_join_param()
     # play_join_param2()
+
+    play_priority_lifo_queue()
