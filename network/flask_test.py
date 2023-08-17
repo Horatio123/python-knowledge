@@ -6,6 +6,7 @@ app = Flask(__name__)
 """
 flask --app flask_test run
 gunicorn -w 5 -b 127.0.0.1:6000 flask_test:app
+https://www.cnblogs.com/shenh/p/16824903.html
 """
 
 
