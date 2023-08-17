@@ -1,4 +1,3 @@
-import binascii
 
 
 def odd_numbers():
@@ -25,14 +24,40 @@ def play_yield():
         print(i)
 
 
-def play_hexlify():
-    hex_str = "48656c6c6f20576f726c64"  # 十六进制字符串
-    byte_data = binascii.unhexlify(hex_str)  # 转换为字节数组
 
-    print(byte_data)  # 输出：b'Hello World'
-    print(binascii.hexlify(byte_data))
+
+def play_zip():
+    names = ['Alice', 'Bob', 'Charlie']
+    ages = [25, 30, 35]
+    countries = ['USA', 'Canada', 'Australia']
+    zipped = zip(names, ages, countries)
+    print(type(zipped))
+    for person in zipped:
+        print(person)
+
+
+def get_int(item):
+    var = item.split('c')[1]
+    return var
+
+
+def play_sort():
+
+    # func = lambda x: x.split('c')[1]
+    files = ["cc001", "adc005", "adc104", "adc002"]
+
+    files.sort(reverse=True)
+    print(files)
+
+    files.sort(key=get_int)
+    print(files)
+
+    files.sort(key=lambda x: x.split('c')[1])
+    print(files)
 
 
 if __name__ == '__main__':
     # play_hexlify()
-    play_yield()
+    # play_yield()
+    # play_zip()
+    play_sort()

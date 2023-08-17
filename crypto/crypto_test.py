@@ -1,3 +1,4 @@
+import binascii
 import hashlib
 import struct
 from functools import reduce
@@ -48,3 +49,23 @@ def caculate_md5sum():
         data = fp.read()
     file_md5 = hashlib.md5(data).hexdigest()
     print(file_md5)
+
+
+def play_hexlify():
+    # hex_str = "48656c6c6f20576f726c64"  # 十六进制字符串
+    hex_str = "cc82de8f04b08635eb75a6bc8a055d49"
+    byte_data = binascii.unhexlify(hex_str)  # 转换为字节数组
+
+    print(byte_data)  # 输出：b'Hello World'
+    with open(file="secret.in", mode="wb") as f:
+        f.write(byte_data)
+    print(binascii.hexlify(byte_data))
+
+    with open(file="secret.in", mode="rb") as f:
+        text = f.read()
+        print(text)
+        print(binascii.hexlify(text).decode())
+
+
+if __name__ == '__main__':
+    play_hexlify()
