@@ -1,0 +1,17 @@
+jklj
+kjh
+
+{
+    vbt_start = 0x1111;
+    vbt_len = 0x2222;
+    vbt_hash = 0x4849;
+    vbt_sign = HI;
+    {
+        vbt_root = 999;
+    }
+}
+
+
+234435d564edtdr
+45354edtrgdgdxf
+567576ufhgfhg
