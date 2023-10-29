@@ -17,17 +17,18 @@ def tcpClient():
         # 通信循环
         while True:
             inData = input('pleace input something:')
-            if inData == 'q':
-                break
             # 发送数据到服务器
             # inData = '[{}]:{}'.format(ctime(), inData)
 
             s.send(inData.encode())
-            print('发送成功！')
+            print('发送成功: ' + str(inData.encode()))
 
             # 接收返回数据
             outData = s.recv(BUFFSIZE)
             print(f'返回数据信息：{outData.decode()}')
+
+            if inData == 'q':
+                break
 
         # 关闭客户端套接字
         s.close()

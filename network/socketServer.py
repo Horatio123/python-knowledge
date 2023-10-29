@@ -18,9 +18,10 @@ def tcpServer():  # TCP服务
         s.bind(ADDR)
         # 启动服务监听 MAX_LISTEN
         s.listen(MAX_LISTEN)
-        print('等待用户接入……')
+        print('start listen')
         while True:
             # 等待客户端连接请求,获取connSock
+            print('等待用户接入……')
             conn, addr = s.accept()
             print('警告，远端客户:{} 接入系统！！！'.format(addr))
             # with conn:
@@ -28,8 +29,6 @@ def tcpServer():  # TCP服务
                 print('接收请求信息……')
                 # 接收请求信息
                 data = conn.recv(BUFFSIZE)  # 读取的数据一定是bytes类型，需要解码成字符串类型
-                if not data:
-                    break
                 info = data.decode()
                 # print('data=%s' % data)
                 print(f'接收数据：{info}')
@@ -37,8 +36,10 @@ def tcpServer():  # TCP服务
                 # 发送请求数据
                 conn.send(f'服务端接收到信息{info}'.encode())
                 print('发送返回完毕！！！')
+
+                if info == 'q':
+                    break
             conn.close()
-            s.close()
 
 
 # 创建UDP服务
