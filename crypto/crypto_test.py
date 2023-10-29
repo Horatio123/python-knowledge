@@ -56,19 +56,20 @@ def caculate_md5sum():
 
 
 def play_hexlify():
-    # hex_str = "48656c6c6f20576f726c64"  # 十六进制字符串
-    hex_str = "cc82de8f04b08635eb75a6bc8a055d49"
+    hex_str = "48656c6c6f20576f726c64"  # 十六进制字符串
+    # hex_str = "cc82de8f04b08635eb75a6bc8a055d49"
     byte_data = binascii.unhexlify(hex_str)  # 转换为字节数组
 
     print(byte_data)  # 输出：b'Hello World'
     with open(file="secret.in", mode="wb") as f:
         f.write(byte_data)
-    print(binascii.hexlify(byte_data))
+    print(binascii.hexlify(byte_data))  # print b'48656c6c6f20576f726c64'
 
     with open(file="secret.in", mode="rb") as f:
         text = f.read()
-        print(text)
-        print(binascii.hexlify(text).decode())
+        print(text)  # print b'Hello World'
+        print(text.decode())  # print Hello World
+        print(binascii.hexlify(text))  # print b'48656c6c6f20576f726c64'
 
 
 def play_convert_str2hex():
@@ -167,7 +168,7 @@ def play_security_access(challenge_bits):
 if __name__ == '__main__':
     # play_hexlify()
     # play_convert_str2hex()
-    # play_convert_str2bin()
+    play_convert_str2bin()
 
     # res1, res2, res3 = play_security_access(0x43BB42AA4164F91A)  # 0xb6 0xf4 0xcf
     # print(hex(res1), hex(res2), hex(res3))
@@ -175,5 +176,5 @@ if __name__ == '__main__':
     # res1, res2, res3 = play_security_access(0x43BB42AA418A964E)  # 0x81 0x4b 0xa6
     # print(hex(res1), hex(res2), hex(res3))
 
-    res1, res2, res3 = play_security_access(0x5e4d3c2b1a64f91a)  # 0xa1 0x1c 0xa8
-    print(hex(res1), hex(res2), hex(res3))
+    # res1, res2, res3 = play_security_access(0x5e4d3c2b1a64f91a)  # 0xa1 0x1c 0xa8
+    # print(hex(res1), hex(res2), hex(res3))
