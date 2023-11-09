@@ -2,13 +2,38 @@ import binascii
 import hashlib
 import struct
 from functools import reduce
+import unittest
 
 """
 replace bit
 """
 
 
-def st_lib():
+class CryptoTest(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def test_addtion(self):
+        result = 2 + 3
+        self.assertEqual(result, 5)
+
+    def test_reduce_fun(self):
+        ll = [1, 20, 3, 4]
+        r_sum = reduce(lambda x, y: x + y, ll)
+        print()
+        print(r_sum)
+        self.assertEqual(r_sum, 28)
+        assert r_sum == 28
+        r_max = reduce(lambda x, y: x if x > y else y, ll)
+        print(r_max)
+        self.assertEqual(r_max, 20)
+
+
+def st_lib(self):
     ll = ['qq', 'ww', 'ee']
     p_k = list(map(lambda k: k + '2', ll))
     print(p_k)
@@ -18,14 +43,6 @@ def st_lib():
 
     r_k = list(map(lambda k: k + d[k], filter(lambda k: k != 'a', ks)))
     print(r_k)
-
-
-def reduce_fun():
-    ll = [1, 20, 3, 4]
-    r_sum = reduce(lambda x, y: x + y, ll)
-    print(r_sum)
-    r_max = reduce(lambda x, y: x if x > y else y, ll)
-    print(r_max)
 
 
 def play_struct():
@@ -168,7 +185,7 @@ def play_security_access(challenge_bits):
 if __name__ == '__main__':
     # play_hexlify()
     # play_convert_str2hex()
-    play_convert_str2bin()
+    # play_convert_str2bin()
 
     # res1, res2, res3 = play_security_access(0x43BB42AA4164F91A)  # 0xb6 0xf4 0xcf
     # print(hex(res1), hex(res2), hex(res3))
@@ -178,3 +195,4 @@ if __name__ == '__main__':
 
     # res1, res2, res3 = play_security_access(0x5e4d3c2b1a64f91a)  # 0xa1 0x1c 0xa8
     # print(hex(res1), hex(res2), hex(res3))
+    unittest.main()
