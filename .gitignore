@@ -5,7 +5,6 @@ __pycache__/
 
 # C extensions
 *.so
-
 # Distribution / packaging
 .Python
 build/
@@ -153,6 +152,7 @@ dmypy.json
 cython_debug/
 
 old-driver
+job_info.txt
 .idea
 .DS_Store
 # PyCharm

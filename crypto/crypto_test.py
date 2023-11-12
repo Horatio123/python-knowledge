@@ -3,7 +3,7 @@ import hashlib
 import struct
 from functools import reduce
 import unittest
-
+import test_package
 """
 replace bit
 """
@@ -31,6 +31,12 @@ class CryptoTest(unittest.TestCase):
         r_max = reduce(lambda x, y: x if x > y else y, ll)
         print(r_max)
         self.assertEqual(r_max, 20)
+
+    def test_package(self):
+        aa = 2
+        bb = 3
+        ssum = test_package.p_add(aa, bb)
+        self.assertEqual(ssum, 5)
 
 
 def st_lib(self):
