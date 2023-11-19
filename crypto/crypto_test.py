@@ -78,12 +78,18 @@ def caculate_md5sum():
     print(file_md5)
 
 
-def play_hexlify():
+def test_play_hexlify():
     hex_str = "48656c6c6f20576f726c64"  # 十六进制字符串
     # hex_str = "cc82de8f04b08635eb75a6bc8a055d49"
     byte_data = binascii.unhexlify(hex_str)  # 转换为字节数组
-
+    print()
     print(byte_data)  # 输出：b'Hello World'
+
+    hex_str2 = "10131023"
+    byte_data2 = binascii.unhexlify(hex_str2)
+    print(byte_data2)
+
+    print(binascii.hexlify(b'\x10\x21\xff1'))
     with open(file="secret.in", mode="wb") as f:
         f.write(byte_data)
     print(binascii.hexlify(byte_data))  # print b'48656c6c6f20576f726c64'

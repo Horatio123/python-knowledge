@@ -1,3 +1,4 @@
+import pytest
 
 
 def odd_numbers():
@@ -13,7 +14,7 @@ def countdown(n):
         n -= 1
 
 
-def play_yield():
+def test_play_yield():
     odd = odd_numbers()
     for i in range(5):
         print(next(odd))
@@ -22,8 +23,6 @@ def play_yield():
     print("cccc: ", next(ll))
     for i in ll:
         print(i)
-
-
 
 
 def play_zip():
@@ -54,6 +53,11 @@ def play_sort():
 
     files.sort(key=lambda x: x.split('c')[1])
     print(files)
+
+
+def test_get_name():
+    print()
+    print(__name__)
 
 
 if __name__ == '__main__':
