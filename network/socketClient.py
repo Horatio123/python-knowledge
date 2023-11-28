@@ -3,7 +3,7 @@ import socket
 from time import ctime
 
 HOST = '127.0.0.1'
-PORT = 9001
+PORT = 8888
 ADDR = (HOST, PORT)
 BUFFSIZE = 1024
 
