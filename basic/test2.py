@@ -60,6 +60,17 @@ def test_get_name():
     print(__name__)
 
 
+def test_and_or():
+    EVENT_READ = (1 << 0)
+    EVENT_WRITE = (1 << 1)
+
+    print(EVENT_READ)
+    print(EVENT_WRITE)
+
+    print(3 & EVENT_READ)
+    print(3 & EVENT_WRITE)
+
+
 if __name__ == '__main__':
     # play_hexlify()
     # play_yield()

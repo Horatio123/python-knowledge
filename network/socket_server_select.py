@@ -1,6 +1,7 @@
 import socket
 import selectors
 import types
+from time import sleep
 
 """
 https://realpython.com/python-sockets/#handling-multiple-connections
@@ -24,6 +25,7 @@ def service_connection(key, mask):
         recv_data = sock.recv(1024)  # Should be ready to read
         if recv_data:
             data.outb += recv_data
+            print(f"get data: {recv_data}")
         else:
             print(f"Closing connection to {data.addr}")
             sel.unregister(sock)
@@ -33,6 +35,8 @@ def service_connection(key, mask):
             print(f"Echoing {data.outb!r} to {data.addr}")
             sent = sock.send(data.outb)  # Should be ready to write
             data.outb = data.outb[sent:]
+        else:
+            print("nothing to write")
 
 
 def socket_server():
@@ -45,16 +49,22 @@ def socket_server():
     print(f"Listening on {(host, port)}")
     lsock.setblocking(False)
     sel.register(lsock, selectors.EVENT_READ, data=None)
+    time = 1
 
     try:
         while True:
-            print("enter true")
+            print(f"----------------------enter true time {time}")
+            # print(f"sel get map: {sel.get_map()}")
+            time = time + 1
             events = sel.select(timeout=None)
             for key, mask in events:
+                print(f'key is {key}')
+                print(f'mask is {mask}')
                 if key.data is None:
                     accept_wrapper(key.fileobj)
                 else:
                     service_connection(key, mask)
+            sleep(3)
     except KeyboardInterrupt:
         print("Caught keyboard interrupt, exiting")
     finally:
