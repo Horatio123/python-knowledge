@@ -23,6 +23,7 @@ def get_start_time_and_money(data, column, start=0):
 def calculate_earning_and_interest_rate(start, end, days):
     return (end - start), (end - start) / start / days * 365
 
+
 def calculate_all():
     raw_data = pd.read_csv('bank/finance-20240722.csv', skiprows=1)
     print(raw_data)
@@ -60,8 +61,28 @@ def get_sum(row):
     return row.sum()
 
 
-if __name__ == '__main__':
-    # calculate_all()
+def calculate_week_earn(raw_data):
+    # print(raw_data.iloc[2])
+    print('all raw_data is')
+    print(raw_data)
+    raw_data = raw_data.rename(columns={'time': 'idx'})
+    # print(country_year)
+    raw_data.set_index('idx', inplace=True)
+    # print(country_year)
+    transposed_raw_data = raw_data.transpose().reset_index().rename(columns={'index': 'project'})
+    print('transposed raw_data is')
+    modified_transposed_raw_data = transposed_raw_data.drop('project', axis=1)
+    print(modified_transposed_raw_data)
+    print(modified_transposed_raw_data.shape[1])
+
+    for i in range(modified_transposed_raw_data.shape[1] - 1):
+        cols = modified_transposed_raw_data.columns
+        earn = modified_transposed_raw_data.iloc[:, i + 1] - modified_transposed_raw_data.iloc[:, i]
+        print(f'{earn.sum()} is earned from {cols[i]} to {cols[i + 1]}')
+
+
+def df_test():
+
     raw_data = pd.read_csv('bank/finance-20240722.csv', skiprows=1)
     # print(raw_data.iloc[2])
     print('all raw_data is')
@@ -79,22 +100,6 @@ if __name__ == '__main__':
     print('all sum is')
     print(all_sum)
 
-    # all_sum = pd.DataFrame({'all_sum': np.zeros(13)})
-    # print(all_sum)
-    # print(raw_data['icbc_a'])
-    # all_sum = all_sum + raw_data['icbc_a']
-    # print('all sum is')
-    # print(all_sum)
-    #
-    # for col in raw_data.columns:
-    #     print(col)
-    #     if col == 'time':
-    #         continue
-    #     all_sum = all_sum + raw_data[col]
-    #
-    # print('all sum is')
-    # print(all_sum)
-
     for name, col in raw_data.iloc[2].to_dict().items():
         print(f'name is {name}, col is {col}')
 
@@ -110,7 +115,10 @@ if __name__ == '__main__':
         print(data2)
 
 
-
+if __name__ == '__main__':
+    raw_data = pd.read_csv('bank/finance-20240722.csv', skiprows=1)
+    # calculate_all()
+    calculate_week_earn(raw_data)
 
 
 
