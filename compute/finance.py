@@ -1,6 +1,7 @@
 import pandas as pd
 from datetime import datetime
 import math
+import numpy as np
 
 
 def get_start_time_and_money(data, column, start=0):
@@ -51,8 +52,63 @@ def calculate_all():
         print(f'{col} start money is {start_money}, end money is {end_money}, earning is {earning} ,interest_rate is {interest_rate}')
 
 
+def double_item(a):
+    return a * 2
+
+
+def get_sum(row):
+    return row.sum()
+
+
 if __name__ == '__main__':
-    calculate_all()
+    # calculate_all()
+    raw_data = pd.read_csv('bank/finance-20240722.csv', skiprows=1)
+    # print(raw_data.iloc[2])
+    print('all raw_data is')
+    print(raw_data)
+
+    icbc_double = raw_data[['icbc_a', 'icbc_b', 'icbc_c']].apply(double_item)
+    print('use apply')
+    print(icbc_double)
+
+    icbc_sum = raw_data['icbc_a'] + raw_data['icbc_b'] + raw_data['icbc_c']
+    print('icbc sum is')
+    print(icbc_sum)
+
+    all_sum = raw_data.drop('time', axis=1).apply(get_sum, axis=1)
+    print('all sum is')
+    print(all_sum)
+
+    # all_sum = pd.DataFrame({'all_sum': np.zeros(13)})
+    # print(all_sum)
+    # print(raw_data['icbc_a'])
+    # all_sum = all_sum + raw_data['icbc_a']
+    # print('all sum is')
+    # print(all_sum)
+    #
+    # for col in raw_data.columns:
+    #     print(col)
+    #     if col == 'time':
+    #         continue
+    #     all_sum = all_sum + raw_data[col]
+    #
+    # print('all sum is')
+    # print(all_sum)
+
+    for name, col in raw_data.iloc[2].to_dict().items():
+        print(f'name is {name}, col is {col}')
+
+    # print(raw_data.iloc[:, 2])
+    for idx, row in raw_data.iloc[:, 2].to_dict().items():
+        print(f'idx is {idx}, row is {row}')
+
+    for index, row in raw_data.iterrows():
+        print(f'index is {index}\nrow is {row}')
+        data = raw_data.at[index, 'icbc_b']
+        print(data)
+        data2 = raw_data.iloc[index, 2]
+        print(data2)
+
 
 
 
