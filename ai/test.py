@@ -62,3 +62,10 @@ def test_compare_ndarray():
 
     accuracy = np.sum(result) / result.shape[0]
     print(accuracy)
+
+
+def test_multi():
+    a = np.array([[1, 2, 3], [4, 5, 6]])
+    b = np.array([[1, 2], [4, 5], [6, 7]])
+    c = a * b
+    print(c)
