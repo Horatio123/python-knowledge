@@ -6,7 +6,6 @@ class CustomException(Exception):
 
 
 def execute_command(cmd, work_dir):
-    result = ""
     process = subprocess.Popen(cmd, shell=True, cwd=work_dir, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     # 循环读取输出并打印
     while True:

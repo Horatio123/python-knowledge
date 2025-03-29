@@ -2,6 +2,7 @@ import socket
 import selectors
 import types
 from time import sleep
+import threading
 
 """
 https://realpython.com/python-sockets/#handling-multiple-connections
@@ -73,4 +74,14 @@ def socket_server():
 
 if __name__ == '__main__':
     sel = selectors.DefaultSelector()
-    socket_server()
+    t = threading.Thread(target=socket_server(), daemon=True)
+    t.start()
+
+    while True:
+        print('-------------x')
+        sleep(3)
+        
+        for ss in sel.get_map():
+            print(ss)
+
+

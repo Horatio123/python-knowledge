@@ -25,7 +25,7 @@ def calculate_earning_and_interest_rate(start, end, days):
 
 
 def calculate_all_time_interest_rate(raw_data):
-    print(raw_data)
+    # print(raw_data)
 
     for col in raw_data.columns:
         # 对每列做操作
@@ -115,7 +115,7 @@ def df_test():
 
 
 if __name__ == '__main__':
-    raw_data = pd.read_csv('bank/finance-20240806.csv', skiprows=1)
+    raw_data = pd.read_csv('bank/finance.csv', skiprows=2)
     calculate_week_earn(raw_data)
     calculate_all_time_interest_rate(raw_data)
 
